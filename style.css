@@ -1,40 +1,34 @@
-/* 1. Page Layout & Background */
 body {
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  background-color: #e0eafc; /* Solid light blue background */
+  background-color: #e0eafc; 
   display: flex;
-  flex-direction: column; /* Stacks everything vertically */
-  align-items: center;    /* Centers horizontally */
-  justify-content: center; /* Centers vertically */
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center; 
   min-height: 100vh;
   margin: 0;
   padding: 20px;
 }
 
-/* 2. Container Styling (Simulating a Card) */
-/* We style the elements directly to stack inside the viewport */
 #title, #description, input, .btn, #output {
   width: 100%;
-  max-width: 350px; /* Limits width so it looks like a card */
+  max-width: 350px; 
   margin: 10px 0;
   box-sizing: border-box;
 }
 
-/* 3. The White Card Background */
-/* This wraps around your content visually */
 body::before {
   content: "";
   position: absolute;
   background: white;
   width: 90%;
   max-width: 420px;
-  height: 650px; /* Adjust if your output gets long */
+  height: 650px; 
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  z-index: -1; /* Puts the white box behind your text */
+  z-index: -1;
 }
 
-/* 4. Typography */
 #title {
   color: #2c3e50;
   text-align: center;
@@ -48,7 +42,6 @@ body::before {
   margin-bottom: 20px;
 }
 
-/* 5. Input Fields */
 input {
   padding: 14px;
   border: 2px solid #edf2f7;
@@ -65,7 +58,6 @@ input:focus {
   box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
 }
 
-/* 6. Button Design */
 .btn {
   background-color: #3498db;
   color: white;
@@ -84,7 +76,6 @@ input:focus {
   transform: translateY(-2px);
 }
 
-/* 7. Output Section */
 #output {
   background-color: #f9fbfc;
   padding: 15px;
@@ -95,7 +86,7 @@ input:focus {
 }
 
 #output h2 {
-  color: #27ae60; /* Success green */
+  color: #27ae60; 
   font-size: 1.2rem;
   margin-top: 0;
 }
